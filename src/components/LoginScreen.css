@@ -1,0 +1,97 @@
+div.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg') center no-repeat;
+    background-size: cover;
+}
+
+div.loginScreen_gradient{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    background:linear-gradient(to bottom,
+    rgba(0,0,0,0.9) 0,
+    rgba(0,0,0,0) 60%,
+    rgba(0,0,0,0.9) )100%;
+}
+img.loginScreen_logo{
+    width: 14rem;
+    height: 5rem;
+    position: fixed;
+    left: 1.4rem;
+    top: 1rem;
+    object-fit: contain;
+
+}
+button.login_btn{
+    position: fixed;
+    right: 2.5rem;
+    top: 2rem;
+    height: 3.2rem;
+    width: 8.5rem;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: #E50914;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: .04rem;
+    cursor: pointer;
+}
+
+div.loginScreen_content{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: white;
+    padding: 2rem;
+}
+
+div.loginScreen_content > h1{
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+}
+div.loginScreen_content > h2{
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+}
+div.loginScreen_content > h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+
+}
+
+div.loginScreen_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+
+   
+}
+
+input.email_input{
+    outline: none;
+    border: transparent;
+    background-color: white;
+    color: black;
+    padding: 1rem 1.5rem;
+    width: 25rem;
+    
+}
+button.getstarted_btn{
+    outline: none;
+    border: transparent;
+    padding: 1rem .8rem;
+    background-color: #E50914 ;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    
+}

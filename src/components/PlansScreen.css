@@ -1,0 +1,36 @@
+div.plansScreen_allPlans{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    opacity: .8;
+}
+div.plansScreen_allPlans:hover{
+    opacity: 1;
+}
+
+div.plansScreen_allPlans > button{
+    padding: .8rem 1.8rem;
+    color: white;
+    background-color: #E50914;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+div.plansScreen_disabled{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+div.plansScreen_disabled > button{
+    padding: .8rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: grey !important;
+    color: white;
+}

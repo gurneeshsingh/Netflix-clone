@@ -1,0 +1,59 @@
+div.loginBox{
+    
+    width: 40rem;
+    max-width: 40rem ;
+    border: transparent;
+    background-color: rgba(0,0,0,0.8);
+    padding: 5rem;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .9rem;
+}
+
+.loginBox > form{
+display: flex;    
+flex-direction: column;
+}
+.loginBox > form > input{
+    outline: none;
+    padding: .5rem 1.5rem;
+    height: 3rem;
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 1.4rem;
+}
+
+.loginBox > form > button{
+    padding: 1.2rem 1.5rem;
+    color: white;
+    background-color: #E50914;
+    outline: none;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.loginBox > form > h1{
+    text-align: left;
+    padding-bottom: 2rem;
+    font-weight: 500;
+}
+
+.loginBox > form > h4{
+    text-align: left;
+    margin-top: 2.2rem;
+    font-size: 1.3rem;
+    
+}
+.grey{
+    color: grey;
+}
+.link:hover{
+cursor: pointer;
+text-decoration: underline;
+}

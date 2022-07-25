@@ -1,0 +1,99 @@
+div.profileScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+
+}
+
+div.profileScreen_info{
+    height: 5rem;
+    width: 5rem;
+    top: 7rem;
+    position: absolute;
+    
+}
+
+img.profileScreen_avatar{
+    height: 6rem;
+    width: 6rem;
+}
+
+div.profileScreen_body{
+    height: 50%;
+    width: 50rem;
+    display: flex;
+    /* border: 1px solid orange; */
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div.profileScreen_plans{
+    width: 40rem;
+    margin-top: 1.5rem;
+}
+
+div.profileScreen_plans > h3{
+border-bottom: 1px solid #282c2d;
+font-size: 1.8rem;
+font-weight: 500;
+padding-bottom: .5rem;
+
+}
+
+div.profileScreen_plans > button.signout_btn{
+    width: 40rem;
+    color: white;
+    background-color: #E50914;
+    outline: none;
+    border: none;
+    padding: .7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+div.profileScreen_details{
+    position: absolute;
+    top: 7rem;
+    left: 8.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+
+}
+div.profileScreen_details > h2{
+    color: white;
+    background-color: grey;
+    padding: .8rem 1rem;
+    width: auto;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    
+}
+div.profileScreen_body > h1{
+font-size: 3rem;
+font-weight: 500;
+border-bottom: 1px solid #282c2d;
+padding-bottom: .5rem;
+
+}
+
+@media(max-width : 430px){
+    div.profileScreen_body{
+        max-width: 40rem;
+    }
+    div.profileScreen_details{
+        max-width: 29rem;
+    }
+    div.profileScreen_plans{
+        max-width: 29rem;
+    }
+    button.signout_btn{
+        max-width: 29rem;
+    }
+}
