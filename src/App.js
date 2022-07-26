@@ -8,6 +8,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import Footer from "./components/Footer";
+import { onAuthStateChanged } from 'firebase/auth';
 
 
 
@@ -18,7 +19,7 @@ function App() {
 
   // to check for the current state of user , that is logged in or logged out 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+    const unsubscribe = onAuthStateChanged(auth,(authUser) => {
       if (authUser) {
         // logged in 
         dispatch(login({
