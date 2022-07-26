@@ -1,3 +1,4 @@
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useRef, useState } from 'react'
 import { auth } from "../firebase";
 import "./LoginBox.css";
@@ -21,7 +22,7 @@ const LoginBox = () => {
         e.preventDefault();
 
         // below method returns a promise 
-        auth.signInWithEmailAndPassword(
+        signInWithEmailAndPassword(auth,
             emailRef.current.value,
             passwordRef.current.value
         ).then((authUser) => {
@@ -36,7 +37,7 @@ const LoginBox = () => {
         e.preventDefault();
 
         // below method returns a promise 
-        auth.createUserWithEmailAndPassword(
+        createUserWithEmailAndPassword(auth,
             emailRef.current.value,
             passwordRef.current.value
         ).then((authUser) => {
