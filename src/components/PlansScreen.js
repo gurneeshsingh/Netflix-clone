@@ -4,6 +4,7 @@ import { selectUser } from "../features/userSlice";
 import { loadStripe } from '@stripe/stripe-js';
 import "./PlansScreen.css";
 import db from "../firebase";
+import { collection } from 'firebase/firestore';
 
 
 const PlansScreen = () => {
@@ -25,7 +26,7 @@ const PlansScreen = () => {
 
     useEffect(() => {
         // first get the logged in user from db
-        db.collection('customers')
+        collection(db,'customers')
             .doc(user.uid)
             .collection('subscriptions')
             .get() // now this returns a promise
@@ -51,7 +52,7 @@ const PlansScreen = () => {
 
     useEffect(() => {
         // use db to get the collection of products , filter active products using where, get returns a promise, use .then to handle it 
-        db.collection('products')
+        collection(db,'products')
             .where('active', '==', true)
             .get()
             .then(querySnapshot => {
@@ -87,7 +88,7 @@ const PlansScreen = () => {
         // async because this will redirect to the checkout page from stripe 
         try {
             // get refrence for the customers collection from the db and get the current logged in user from the redux store and create a new collection give any name : checkout_sessions
-            const docRef = await db.collection('customers')
+            const docRef = await collection(db,'customers')
                 .doc(user.uid)
                 .collection('checkout_sessions')
                 .add({
