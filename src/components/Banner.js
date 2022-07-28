@@ -26,7 +26,6 @@ const Banner = () => {
         async function fetchData() {
             try {
                 const response = await axios.get(requests.fetchMostPopular);
-
                 const randomMovie = response.data.results[Math.floor(Math.random() * response.data.results.length )];
                 setMovies(randomMovie);
                 return response;

@@ -53,7 +53,7 @@ const Row = ({ title, fetchUrl, isLargeRow = true }) => {
             <div className="row">
                 <h2 >{title}</h2>
                 <div className="all_posters">
-                    {movie.map((item) => {
+                    {movie?.map((item) => {
                         if ((isLargeRow && item.poster_path) || (!isLargeRow && item.backdrop_path)) {
                             return (
                                 <img
